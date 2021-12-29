@@ -62,7 +62,7 @@ class Response(_Response):
                     f"Excpected message type 'http.response.body'. " f"Found {message}"
                 )
 
-            yield message["body"]
+            yield message.get("body", b"")
             self._more_body = message.get("more_body", False)
 
         # Send disconnect

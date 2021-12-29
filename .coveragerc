@@ -1,4 +1,0 @@
-[run]
-omit =
-    async_asgi_testclient/tests/*
-    async_asgi_testclient/compatibility.py
